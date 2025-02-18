@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useCallback } from 'react'
 
 const MAX_RETRIES = 3
 const RETRY_DELAY = 1000 // 1 second
@@ -10,7 +10,7 @@ const VisitorCounter = () => {
   const [error, setError] = useState<string | null>(null)
   const [retryCount, setRetryCount] = useState(0)
 
-  const fetchCount = async () => {
+  const fetchCount = useCallback(async () => {
     try {
       const response = await fetch('/api/visitors')
       if (!response.ok) {
@@ -49,11 +49,11 @@ const VisitorCounter = () => {
         }, RETRY_DELAY)
       }
     }
-  }
+  }, [retryCount]) // Add retryCount as a dependency since it's used in the function
 
   useEffect(() => {
     fetchCount()
-  }, [retryCount]) // Retry when retryCount changes
+  }, [fetchCount]) // Use fetchCount as a dependency
 
   const handleRetry = () => {
     setRetryCount(0) // Reset retry count

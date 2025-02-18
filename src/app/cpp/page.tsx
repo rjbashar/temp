@@ -1,7 +1,8 @@
 'use client'
 
 import React from 'react'
-import CodeExample from './components/CodeExample'
+import NavMenu from '../components/NavMenu'
+import Review from './components/sections/Review'
 // Import other section components
 
 export default function CppTutorial() {
@@ -27,6 +28,7 @@ export default function CppTutorial() {
 
   return (
     <>
+      <NavMenu />
       <main className="min-h-screen p-8 max-w-4xl mx-auto">
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold mb-2">Higher Colleges of Technology</h1>
@@ -62,19 +64,7 @@ export default function CppTutorial() {
           </nav>
         </section>
 
-        <section id="review" className="mb-16">
-          <h2 className="text-3xl font-bold mb-4">Review</h2>
-          <p className="mb-4">
-            In this C++ programming tutorial, you will learn:
-          </p>
-          <ul className="list-disc list-inside mb-4 space-y-2">
-            <li>Basic program structure and syntax</li>
-            <li>How to work with variables and data types</li>
-            <li>Using operators for calculations</li>
-            <li>Making decisions with conditional statements</li>
-            <li>Creating loops for repetitive tasks</li>
-          </ul>
-        </section>
+        <Review />
 
         <section id="setup" className="mb-16">
           <h2 className="text-3xl font-bold mb-4">Setting Up Your Environment</h2>

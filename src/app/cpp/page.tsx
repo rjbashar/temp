@@ -139,6 +139,83 @@ Pi: 3.14159 (Size: 8 bytes)`}</code>
                   </pre>
                 </div>
 
+                <div className="bg-gray-100 p-4 rounded-lg">
+                  <h4 className="font-semibold mb-2">Temperature Converter Example</h4>
+                  <pre className="bg-black text-white p-3 rounded">
+                    <code>{`#include <iostream>
+using namespace std;
+
+int main() {
+    // Declare variables
+    int celsius;      // Integer for Celsius temperature
+    float fahrenheit; // Float for Fahrenheit temperature
+    
+    // Get temperature in Celsius
+    cout << "Enter temperature in Celsius: ";
+    cin >> celsius;
+    
+    // Convert to Fahrenheit
+    fahrenheit = (celsius * 9.0/5.0) + 32;
+    
+    // Display results
+    cout << celsius << " degrees Celsius = ";
+    cout << fahrenheit << " degrees Fahrenheit" << endl;
+    
+    return 0;
+}`}</code>
+                  </pre>
+                  <p className="mt-2 text-gray-600">Example Output:</p>
+                  <pre className="bg-gray-700 text-white p-2 rounded mt-1">
+                    <code>{`Enter temperature in Celsius: 25
+25 degrees Celsius = 77 degrees Fahrenheit`}</code>
+                  </pre>
+                </div>
+
+                <div className="bg-gray-100 p-4 rounded-lg">
+                  <h4 className="font-semibold mb-2">Student Information Example</h4>
+                  <pre className="bg-black text-white p-3 rounded">
+                    <code>{`#include <iostream>
+using namespace std;
+
+int main() {
+    // Declare variables of different types
+    char section = 'A';           // Character for class section
+    int studentId = 12345;     // Integer for student ID
+    float gpa = 3.75;         // Float for GPA
+    bool isActive = true;     // Boolean for student status
+    
+    // Display student information
+    cout << "Student Information:" << endl;
+    cout << "Section: " << section << endl;
+    cout << "ID: " << studentId << endl;
+    cout << "GPA: " << gpa << endl;
+    cout << "Active Student: " << (isActive ? "Yes" : "No") << endl;
+    
+    return 0;
+}`}</code>
+                  </pre>
+                </div>
+
+                <div className="bg-yellow-50 p-4 rounded-lg">
+                  <h4 className="font-semibold mb-2 text-yellow-800">Additional Practice Exercises</h4>
+                  <ol className="list-decimal list-inside space-y-2">
+                    <li>Write a program that:
+                      <ul className="list-disc list-inside ml-8">
+                        <li>Declares variables for a student's quiz scores (integer)</li>
+                        <li>Calculates the average score (float)</li>
+                        <li>Shows the difference between integer and float division</li>
+                      </ul>
+                    </li>
+                    <li>Create a program that:
+                      <ul className="list-disc list-inside ml-8">
+                        <li>Stores a letter grade as a char</li>
+                        <li>Converts it to its ASCII value</li>
+                        <li>Shows if it's a passing grade (boolean)</li>
+                      </ul>
+                    </li>
+                  </ol>
+                </div>
+
                 <div className="bg-yellow-50 p-4 rounded-lg">
                   <h4 className="font-semibold mb-2 text-yellow-800">Practice Exercise</h4>
                   <p>Write a program that:</p>
@@ -294,6 +371,103 @@ int main() {  // int and main are reserved words
                   <p className="mt-2">List the reserved words and their purpose in the code above.</p>
                 </div>
 
+                <div className="bg-gray-100 p-4 rounded-lg">
+                  <h4 className="font-semibold mb-2">Using const and static Keywords</h4>
+                  <pre className="bg-black text-white p-3 rounded">
+                    <code>{`#include <iostream>
+using namespace std;
+
+// Function using static variable
+void countCalls() {
+    static int count = 0;  // Static variable keeps its value between calls
+    count++;
+    cout << "This function has been called " << count << " times" << endl;
+}
+
+int main() {
+    // Constant declaration
+    const double TAX_RATE = 0.05;  // Constant value that cannot be changed
+    double price = 100.0;
+    
+    // Calculate and display tax
+    cout << "Price: $" << price << endl;
+    cout << "Tax rate: " << (TAX_RATE * 100) << "%" << endl;
+    cout << "Tax amount: $" << (price * TAX_RATE) << endl;
+    
+    // Call function multiple times
+    cout << "\nCalling function multiple times:" << endl;
+    countCalls();
+    countCalls();
+    countCalls();
+    
+    return 0;
+}`}</code>
+                  </pre>
+                  <p className="mt-2 text-gray-600">Output:</p>
+                  <pre className="bg-gray-700 text-white p-2 rounded mt-1">
+                    <code>{`Price: $100
+Tax rate: 5%
+Tax amount: $5
+
+Calling function multiple times:
+This function has been called 1 times
+This function has been called 2 times
+This function has been called 3 times`}</code>
+                  </pre>
+                </div>
+
+                <div className="bg-gray-100 p-4 rounded-lg">
+                  <h4 className="font-semibold mb-2">Using sizeof and typedef Keywords</h4>
+                  <pre className="bg-black text-white p-3 rounded">
+                    <code>{`#include <iostream>
+using namespace std;
+
+// Create a new type name using typedef
+typedef unsigned int StudentID;
+
+int main() {
+    // Declare variables using the new type
+    StudentID id1 = 12345;
+    StudentID id2 = 67890;
+    
+    // Use sizeof to show memory sizes
+    cout << "Memory sizes:" << endl;
+    cout << "StudentID: " << sizeof(StudentID) << " bytes" << endl;
+    cout << "int: " << sizeof(int) << " bytes" << endl;
+    cout << "char: " << sizeof(char) << " bytes" << endl;
+    cout << "float: " << sizeof(float) << " bytes" << endl;
+    cout << "double: " << sizeof(double) << " bytes" << endl;
+    
+    // Show student IDs
+    cout << "\nStudent IDs:" << endl;
+    cout << "ID 1: " << id1 << endl;
+    cout << "ID 2: " << id2 << endl;
+    
+    return 0;
+}`}</code>
+                  </pre>
+                </div>
+
+                <div className="bg-yellow-50 p-4 rounded-lg">
+                  <h4 className="font-semibold mb-2 text-yellow-800">Additional Practice Exercises</h4>
+                  <ol className="list-decimal list-inside space-y-2">
+                    <li>Create a program using:
+                      <ul className="list-disc list-inside ml-8">
+                        <li>const for defining PI</li>
+                        <li>static for counting function calls</li>
+                        <li>void for a function that prints a message</li>
+                      </ul>
+                    </li>
+                    <li>Write a program that:
+                      <ul className="list-disc list-inside ml-8">
+                        <li>Uses typedef to create a custom type</li>
+                        <li>Shows the size of different data types</li>
+                        <li>Demonstrates type conversion</li>
+                      </ul>
+                    </li>
+                  </ol>
+                </div>
+
                 <div className="bg-blue-50 p-4 rounded-lg mt-8">
                   <h4 className="font-semibold mb-2 text-blue-800">📚 Additional Study Materials</h4>
                   <ul className="list-disc list-inside space-y-4">
@@ -409,26 +583,103 @@ int main() {
                   </pre>
                 </div>
 
-                <div className="bg-yellow-50 p-4 rounded-lg">
-                  <h4 className="font-semibold mb-2 text-yellow-800">Practice Exercise</h4>
-                  <p>Identify the type of each statement in this program:</p>
-                  <pre className="bg-black text-white p-3 rounded mt-2">
-                    <code>{`int main() {
-    // Identify each statement type
-    double price;         // Statement type: ?
-    int quantity = 10;    // Statement type: ?
-    double total;         // Statement type: ?
+                <div className="bg-gray-100 p-4 rounded-lg">
+                  <h4 className="font-semibold mb-2">Rectangle Area Calculator</h4>
+                  <pre className="bg-black text-white p-3 rounded">
+                    <code>{`#include <iostream>
+using namespace std;
+
+int main() {
+    // Declaration statements
+    double length;         // Length of rectangle
+    double width;          // Width of rectangle
+    double area;          // Area of rectangle
+    const string UNIT = "meters";  // Unit of measurement
     
-    cout << "Enter price: ";     // Statement type: ?
-    cin >> price;               // Statement type: ?
+    // Executable statements - Input
+    cout << "Enter length in " << UNIT << ": ";
+    cin >> length;
     
-    total = price * quantity;   // Statement type: ?
+    cout << "Enter width in " << UNIT << ": ";
+    cin >> width;
     
-    cout << "Total: $" << total;  // Statement type: ?
-    return 0;                     // Statement type: ?
+    // Executable statement - Calculation
+    area = length * width;
+    
+    // Executable statements - Output
+    cout << "\nRectangle Dimensions:" << endl;
+    cout << "Length: " << length << " " << UNIT << endl;
+    cout << "Width: " << width << " " << UNIT << endl;
+    cout << "Area: " << area << " square " << UNIT << endl;
+    
+    return 0;
 }`}</code>
                   </pre>
-                  <p className="mt-2">For each line, determine if it is a declaration statement or an executable statement.</p>
+                  <p className="mt-2 text-gray-600">Example Output:</p>
+                  <pre className="bg-gray-700 text-white p-2 rounded mt-1">
+                    <code>{`Enter length in meters: 5
+Enter width in meters: 3
+
+Rectangle Dimensions:
+Length: 5 meters
+Width: 3 meters
+Area: 15 square meters`}</code>
+                  </pre>
+                </div>
+
+                <div className="bg-gray-100 p-4 rounded-lg">
+                  <h4 className="font-semibold mb-2">Time Converter</h4>
+                  <pre className="bg-black text-white p-3 rounded">
+                    <code>{`#include <iostream>
+using namespace std;
+
+int main() {
+    // Declaration statements
+    int totalMinutes;     // Input minutes
+    int hours;           // Calculated hours
+    int minutes;         // Remaining minutes
+    
+    // Executable statement - Input
+    cout << "Enter total minutes: ";
+    cin >> totalMinutes;
+    
+    // Executable statements - Calculations
+    hours = totalMinutes / 60;     // Get hours
+    minutes = totalMinutes % 60;   // Get remaining minutes
+    
+    // Executable statements - Output
+    cout << totalMinutes << " minutes = ";
+    cout << hours << " hours and ";
+    cout << minutes << " minutes" << endl;
+    
+    return 0;
+}`}</code>
+                  </pre>
+                  <p className="mt-2 text-gray-600">Example Output:</p>
+                  <pre className="bg-gray-700 text-white p-2 rounded mt-1">
+                    <code>{`Enter total minutes: 145
+145 minutes = 2 hours and 25 minutes`}</code>
+                  </pre>
+                </div>
+
+                <div className="bg-yellow-50 p-4 rounded-lg">
+                  <h4 className="font-semibold mb-2 text-yellow-800">Additional Practice Exercises</h4>
+                  <ol className="list-decimal list-inside space-y-2">
+                    <li>Create a Circle Calculator that:
+                      <ul className="list-disc list-inside ml-8">
+                        <li>Declares constants for PI</li>
+                        <li>Takes radius as input</li>
+                        <li>Calculates and displays area and circumference</li>
+                      </ul>
+                    </li>
+                    <li>Write a Temperature Converter that:
+                      <ul className="list-disc list-inside ml-8">
+                        <li>Converts between Celsius and Fahrenheit</li>
+                        <li>Shows both temperatures side by side</li>
+                        <li>Uses proper formatting for output</li>
+                      </ul>
+                    </li>
+                  </ol>
                 </div>
 
                 <div className="bg-blue-50 p-4 rounded-lg mt-8">
@@ -627,6 +878,152 @@ int main() {
                     <li>Prompts for their age and height</li>
                     <li>Displays the information in a formatted table</li>
                     <li>Includes appropriate units in the output</li>
+                  </ol>
+                </div>
+
+                <div className="bg-gray-100 p-4 rounded-lg">
+                  <h4 className="font-semibold mb-2">Shopping List Program</h4>
+                  <pre className="bg-black text-white p-3 rounded">
+                    <code>{`#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    // Variables for shopping list
+    string item;
+    double price;
+    int quantity;
+    double total = 0;
+    
+    cout << "=== Shopping List Program ===" << endl;
+    
+    // Get three items
+    for(int i = 1; i <= 3; i++) {
+        // Clear input buffer before getline
+        cin.ignore(1000, &apos;\n&apos;);
+        
+        cout << "\nItem " << i << ":" << endl;
+        cout << "Enter item name: ";
+        getline(cin, item);
+        
+        cout << "Enter price: $";
+        cin >> price;
+        
+        cout << "Enter quantity: ";
+        cin >> quantity;
+        
+        // Calculate and add to total
+        total += price * quantity;
+        
+        // Display item details
+        cout << "Added: " << quantity << "x " << item;
+        cout << " @ $" << price << " each" << endl;
+    }
+    
+    // Display final total
+    cout << "\nTotal cost: $" << total << endl;
+    
+    return 0;
+}`}</code>
+                  </pre>
+                  <p className="mt-2 text-gray-600">Example Output:</p>
+                  <pre className="bg-gray-700 text-white p-2 rounded mt-1">
+                    <code>{`=== Shopping List Program ===
+
+Item 1:
+Enter item name: Notebook
+Enter price: $2.50
+Enter quantity: 3
+Added: 3x Notebook @ $2.50 each
+
+Item 2:
+Enter item name: Pencil
+Enter price: $0.75
+Enter quantity: 5
+Added: 5x Pencil @ $0.75 each
+
+Item 3:
+Enter item name: Eraser
+Enter price: $1.00
+Enter quantity: 2
+Added: 2x Eraser @ $1.00 each
+
+Total cost: $13.25`}</code>
+                  </pre>
+                </div>
+
+                <div className="bg-gray-100 p-4 rounded-lg">
+                  <h4 className="font-semibold mb-2">Contact Information Form</h4>
+                  <pre className="bg-black text-white p-3 rounded">
+                    <code>{`#include <iostream>
+#include <string>
+#include <iomanip>  // For setw
+using namespace std;
+
+int main() {
+    // Variables for contact info
+    string fullName;
+    string email;
+    string phone;
+    
+    cout << "=== Contact Information Form ===" << endl << endl;
+    
+    // Clear input buffer
+    cin.ignore(1000, &apos;\n&apos;);
+    
+    // Get contact details
+    cout << "Enter full name: ";
+    getline(cin, fullName);
+    
+    cout << "Enter email: ";
+    getline(cin, email);
+    
+    cout << "Enter phone number: ";
+    getline(cin, phone);
+    
+    // Display formatted information
+    cout << "\n=== Contact Details ===" << endl;
+    cout << setw(15) << "Name: " << fullName << endl;
+    cout << setw(15) << "Email: " << email << endl;
+    cout << setw(15) << "Phone: " << phone << endl;
+    
+    return 0;
+}`}</code>
+                  </pre>
+                  <p className="mt-2 text-gray-600">Example Output:</p>
+                  <pre className="bg-gray-700 text-white p-2 rounded mt-1">
+                    <code>{`=== Contact Information Form ===
+
+Enter full name: John Smith
+Enter email: john.smith@email.com
+Enter phone number: 123-456-7890
+
+=== Contact Details ===
+          Name: John Smith
+         Email: john.smith@email.com
+         Phone: 123-456-7890`}</code>
+                  </pre>
+                </div>
+
+                <div className="bg-yellow-50 p-4 rounded-lg">
+                  <h4 className="font-semibold mb-2 text-yellow-800">Additional Practice Exercises</h4>
+                  <ol className="list-decimal list-inside space-y-2">
+                    <li>Create a Student Report Card program that:
+                      <ul className="list-disc list-inside ml-8">
+                        <li>Takes student name and ID using getline</li>
+                        <li>Inputs grades for 3 subjects</li>
+                        <li>Calculates and displays average</li>
+                        <li>Uses proper formatting for output</li>
+                      </ul>
+                    </li>
+                    <li>Write a Bank Account program that:
+                      <ul className="list-disc list-inside ml-8">
+                        <li>Takes account holder name</li>
+                        <li>Inputs initial balance</li>
+                        <li>Processes deposit and withdrawal</li>
+                        <li>Shows final balance with proper formatting</li>
+                      </ul>
+                    </li>
                   </ol>
                 </div>
 
@@ -837,18 +1234,151 @@ int main() {
                   </pre>
                 </div>
 
+                <div className="bg-gray-100 p-4 rounded-lg">
+                  <h4 className="font-semibold mb-2">Number Properties Checker</h4>
+                  <pre className="bg-black text-white p-3 rounded">
+                    <code>{`#include <iostream>
+using namespace std;
+
+int main() {
+    int number;
+    
+    cout << "Enter a number: ";
+    cin >> number;
+    
+    cout << "\nNumber Properties:" << endl;
+    
+    // Check if positive, negative, or zero
+    if (number > 0) {
+        cout << "- Number is positive" << endl;
+    } else if (number < 0) {
+        cout << "- Number is negative" << endl;
+    } else {
+        cout << "- Number is zero" << endl;
+    }
+    
+    // Check if even or odd
+    if (number % 2 == 0) {
+        cout << "- Number is even" << endl;
+    } else {
+        cout << "- Number is odd" << endl;
+    }
+    
+    // Check if divisible by 3 and 5
+    if (number % 3 == 0 && number % 5 == 0) {
+        cout << "- Number is divisible by both 3 and 5" << endl;
+    } else if (number % 3 == 0) {
+        cout << "- Number is divisible by 3" << endl;
+    } else if (number % 5 == 0) {
+        cout << "- Number is divisible by 5" << endl;
+    }
+    
+    return 0;
+}`}</code>
+                  </pre>
+                  <p className="mt-2 text-gray-600">Example Output:</p>
+                  <pre className="bg-gray-700 text-white p-2 rounded mt-1">
+                    <code>{`Enter a number: 15
+
+Number Properties:
+- Number is positive
+- Number is odd
+- Number is divisible by both 3 and 5`}</code>
+                  </pre>
+                </div>
+
+                <div className="bg-gray-100 p-4 rounded-lg">
+                  <h4 className="font-semibold mb-2">Simple ATM Menu</h4>
+                  <pre className="bg-black text-white p-3 rounded">
+                    <code>{`#include <iostream>
+using namespace std;
+
+int main() {
+    double balance = 1000.00;  // Initial balance
+    int choice;
+    double amount;
+    
+    cout << "=== Simple ATM Menu ===" << endl;
+    cout << "1. Check Balance" << endl;
+    cout << "2. Deposit" << endl;
+    cout << "3. Withdraw" << endl;
+    cout << "4. Exit" << endl;
+    cout << "Enter choice (1-4): ";
+    cin >> choice;
+    
+    switch (choice) {
+        case 1:
+            cout << "Current balance: $" << balance << endl;
+            break;
+            
+        case 2:
+            cout << "Enter amount to deposit: $";
+            cin >> amount;
+            if (amount > 0) {
+                balance += amount;
+                cout << "Deposit successful" << endl;
+                cout << "New balance: $" << balance << endl;
+            } else {
+                cout << "Invalid amount" << endl;
+            }
+            break;
+            
+        case 3:
+            cout << "Enter amount to withdraw: $";
+            cin >> amount;
+            if (amount > 0 && amount <= balance) {
+                balance -= amount;
+                cout << "Withdrawal successful" << endl;
+                cout << "New balance: $" << balance << endl;
+            } else {
+                cout << "Invalid amount or insufficient funds" << endl;
+            }
+            break;
+            
+        case 4:
+            cout << "Thank you for using our ATM" << endl;
+            break;
+            
+        default:
+            cout << "Invalid choice" << endl;
+    }
+    
+    return 0;
+}`}</code>
+                  </pre>
+                  <p className="mt-2 text-gray-600">Example Output:</p>
+                  <pre className="bg-gray-700 text-white p-2 rounded mt-1">
+                    <code>{`=== Simple ATM Menu ===
+1. Check Balance
+2. Deposit
+3. Withdraw
+4. Exit
+Enter choice (1-4): 2
+Enter amount to deposit: $500
+Deposit successful
+New balance: $1500`}</code>
+                  </pre>
+                </div>
+
                 <div className="bg-yellow-50 p-4 rounded-lg">
-                  <h4 className="font-semibold mb-2 text-yellow-800">Practice Exercise</h4>
-                  <p>Create a program that:</p>
+                  <h4 className="font-semibold mb-2 text-yellow-800">Additional Practice Exercises</h4>
                   <ol className="list-decimal list-inside space-y-2">
-                    <li>Asks for a number between 1 and 100</li>
-                    <li>Uses if statements to check if it&apos;s:</li>
-                    <ul className="list-disc list-inside ml-8">
-                      <li>Even or odd</li>
-                      <li>Positive, negative, or zero</li>
-                      <li>Divisible by both 3 and 5</li>
-                    </ul>
-                    <li>Displays appropriate messages for each condition</li>
+                    <li>Create a Grade Calculator that:
+                      <ul className="list-disc list-inside ml-8">
+                        <li>Takes scores for three subjects</li>
+                        <li>Calculates average percentage</li>
+                        <li>Assigns grade using if-else statements</li>
+                        <li>Shows both percentage and grade</li>
+                      </ul>
+                    </li>
+                    <li>Write a Simple Calculator that:
+                      <ul className="list-disc list-inside ml-8">
+                        <li>Shows menu with basic operations</li>
+                        <li>Uses switch statement for operation selection</li>
+                        <li>Handles division by zero</li>
+                        <li>Asks if user wants to continue</li>
+                      </ul>
+                    </li>
                   </ol>
                 </div>
 
@@ -860,7 +1390,7 @@ int main() {
                         Week 4 (S4, E3) ECT 124
                       </a>
                       <p className="text-sm text-gray-600 ml-5 mt-1">
-                        Comprehensive analysis of control flow structures in C++, with emphasis on if statements, if-else constructs, and decision-making structures. The module examines implementation of control structures, optimization techniques, and best practices.
+                        In-depth examination of control flow structures in C++, with emphasis on if statements, if-else constructs, and decision-making structures. The module examines implementation of control structures, optimization techniques, and best practices.
                       </p>
                     </li>
                     <li>
@@ -977,7 +1507,7 @@ int main() {
     
     do {
         // Get input from user
-        cout << "Enter a number between 5 and 80: ";
+        cout << "Enter a number between 5 and 80 (0 to exit): ";
         cin >> number;
         
         // Validate input
@@ -1092,17 +1622,118 @@ int main() {
                   </pre>
                 </div>
 
+                <div className="bg-gray-100 p-4 rounded-lg">
+                  <h4 className="font-semibold mb-2">Multiplication Table Generator</h4>
+                  <pre className="bg-black text-white p-3 rounded">
+                    <code>{`#include <iostream>
+#include <iomanip>  // For setw
+using namespace std;
+
+int main() {
+    int number;
+    
+    cout << "Enter a number for multiplication table: ";
+    cin >> number;
+    
+    cout << "\nMultiplication Table for " << number << ":" << endl;
+    cout << "-------------------------" << endl;
+    
+    // Using for loop to generate table
+    for (int i = 1; i <= 10; i++) {
+        cout << setw(2) << number << " x " << setw(2) << i;
+        cout << " = " << setw(3) << (number * i) << endl;
+    }
+    
+    return 0;
+}`}</code>
+                  </pre>
+                  <p className="mt-2 text-gray-600">Example Output:</p>
+                  <pre className="bg-gray-700 text-white p-2 rounded mt-1">
+                    <code>{`Enter a number for multiplication table: 7
+
+Multiplication Table for 7:
+-------------------------
+ 7 x  1 =  7
+ 7 x  2 = 14
+ 7 x  3 = 21
+ 7 x  4 = 28
+ 7 x  5 = 35
+ 7 x  6 = 42
+ 7 x  7 = 49
+ 7 x  8 = 56
+ 7 x  9 = 63
+ 7 x 10 = 70`}</code>
+                  </pre>
+                </div>
+
+                <div className="bg-gray-100 p-4 rounded-lg">
+                  <h4 className="font-semibold mb-2">Number Pattern Generator</h4>
+                  <pre className="bg-black text-white p-3 rounded">
+                    <code>{`#include <iostream>
+using namespace std;
+
+int main() {
+    int rows;
+    
+    cout << "Enter number of rows (1-5): ";
+    cin >> rows;
+    
+    if (rows >= 1 && rows <= 5) {
+        cout << "\nPattern:" << endl;
+        
+        // Outer loop for rows
+        for (int i = 1; i <= rows; i++) {
+            // Inner loop for numbers in each row
+            for (int j = 1; j <= i; j++) {
+                cout << j << " ";
+            }
+            cout << endl;
+        }
+        
+        // Reverse pattern
+        for (int i = rows - 1; i >= 1; i--) {
+            for (int j = 1; j <= i; j++) {
+                cout << j << " ";
+            }
+            cout << endl;
+        }
+    } else {
+        cout << "Please enter a number between 1 and 5" << endl;
+    }
+    
+    return 0;
+}`}</code>
+                  </pre>
+                  <p className="mt-2 text-gray-600">Example Output:</p>
+                  <pre className="bg-gray-700 text-white p-2 rounded mt-1">
+                    <code>{`Enter number of rows (1-5): 4
+
+Pattern:
+1 
+1 2 
+1 2 3 
+1 2 3 4 
+1 2 3 
+1 2 
+1`}</code>
+                  </pre>
+                </div>
+
                 <div className="bg-yellow-50 p-4 rounded-lg">
-                  <h4 className="font-semibold mb-2 text-yellow-800">Practice Exercises</h4>
-                  <p>Create programs that:</p>
+                  <h4 className="font-semibold mb-2 text-yellow-800">Additional Practice Exercises</h4>
                   <ol className="list-decimal list-inside space-y-2">
-                    <li>Use a for loop to calculate the sum of even numbers from 2 to 20</li>
-                    <li>Use a while loop to find the first 5 numbers divisible by both 3 and 4</li>
-                    <li>Use a do-while loop to create an interactive menu that:
+                    <li>Create a Prime Number Checker that:
                       <ul className="list-disc list-inside ml-8">
-                        <li>Displays options for different calculations</li>
-                        <li>Performs the selected calculation</li>
-                        <li>Asks if the user wants to continue</li>
+                        <li>Takes a number as input</li>
+                        <li>Uses a loop to check if it&apos;s prime</li>
+                        <li>Shows all factors if not prime</li>
+                      </ul>
+                    </li>
+                    <li>Write a Number Series Generator that:
+                      <ul className="list-disc list-inside ml-8">
+                        <li>Generates Fibonacci series</li>
+                        <li>Shows first N terms</li>
+                        <li>Calculates sum of the series</li>
                       </ul>
                     </li>
                   </ol>

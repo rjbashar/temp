@@ -201,7 +201,7 @@ int main() {
                   <ol className="list-decimal list-inside space-y-2">
                     <li>Write a program that:
                       <ul className="list-disc list-inside ml-8">
-                        <li>Declares variables for a student's quiz scores (integer)</li>
+                        <li>Declares variables for a student&apos;s quiz scores (integer)</li>
                         <li>Calculates the average score (float)</li>
                         <li>Shows the difference between integer and float division</li>
                       </ul>
@@ -210,7 +210,7 @@ int main() {
                       <ul className="list-disc list-inside ml-8">
                         <li>Stores a letter grade as a char</li>
                         <li>Converts it to its ASCII value</li>
-                        <li>Shows if it's a passing grade (boolean)</li>
+                        <li>Shows if it&apos;s a passing grade (boolean)</li>
                       </ul>
                     </li>
                   </ol>

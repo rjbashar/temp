@@ -1,6 +1,8 @@
 'use client'
 
 import React from 'react'
+import CodeExample from './components/CodeExample'
+// Import other section components
 
 export default function CppTutorial() {
   const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {

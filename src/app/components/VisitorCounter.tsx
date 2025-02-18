@@ -2,62 +2,58 @@
 
 import React, { useEffect, useState } from 'react'
 
-export default function VisitorCounter() {
-  const [count, setCount] = useState<number>(0)
-  const [loading, setLoading] = useState(true)
-  const [mounted, setMounted] = useState(false)
+const VisitorCounter = () => {
+  const [count, setCount] = useState<number | null>(null)
+  const [isClient, setIsClient] = useState(false)
 
   useEffect(() => {
-    setMounted(true)
-    const updateCount = async () => {
+    setIsClient(true)
+    const fetchCount = async () => {
       try {
-        // Only check localStorage after component is mounted on client
-        const hasVisited = mounted ? localStorage.getItem('hasVisited') : null
+        const hasVisited = window.localStorage.getItem('hasVisited')
         
         if (!hasVisited) {
           const response = await fetch('/api/visitors', {
             method: 'POST',
           })
+          if (!response.ok) throw new Error('Failed to increment count')
           const data = await response.json()
           setCount(data.count)
-          // Only set localStorage after successful API call
-          if (mounted) {
-            localStorage.setItem('hasVisited', 'true')
-          }
+          window.localStorage.setItem('hasVisited', 'true')
         } else {
           const response = await fetch('/api/visitors')
+          if (!response.ok) throw new Error('Failed to fetch count')
           const data = await response.json()
           setCount(data.count)
         }
       } catch (error) {
         console.error('Error with visitor count:', error)
-      } finally {
-        setLoading(false)
       }
     }
 
-    if (mounted) {
-      updateCount()
+    if (isClient) {
+      fetchCount()
     }
-  }, [mounted])
+  }, [isClient])
 
-  // Don't render anything until after client-side hydration
-  if (!mounted) {
-    return null
-  }
+  // Don't render anything during SSR
+  if (!isClient) return null
 
-  if (loading) {
+  // Show loading state while count is being fetched
+  if (count === null) {
     return (
-      <div className="text-center p-2 bg-gray-100 rounded-md">
-        <p className="text-gray-600">Loading visitor count...</p>
+      <div className="fixed bottom-4 right-4 text-center p-3 bg-gray-100 rounded-lg shadow-md">
+        <p className="text-gray-600">Loading...</p>
       </div>
     )
   }
 
   return (
-    <div className="text-center p-2 bg-blue-50 rounded-md">
-      <p className="text-sm text-gray-600">Visitors</p>
+    <div className="fixed bottom-4 right-4 text-center p-3 bg-blue-50 rounded-lg shadow-md">
+      <p className="text-sm text-gray-600 mb-1">Visitors</p>
       <p className="text-2xl font-bold text-blue-600">{count.toLocaleString()}</p>
     </div>
   )
-} 
+}
+
+export default VisitorCounter 

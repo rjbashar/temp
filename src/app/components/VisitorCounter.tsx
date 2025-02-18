@@ -5,24 +5,26 @@ import React, { useEffect, useState } from 'react'
 export default function VisitorCounter() {
   const [count, setCount] = useState<number>(0)
   const [loading, setLoading] = useState(true)
+  const [mounted, setMounted] = useState(false)
 
   useEffect(() => {
+    setMounted(true)
     const updateCount = async () => {
       try {
-        // Check if this is the first visit in this session
-        const hasVisited = localStorage.getItem('hasVisited')
+        // Only check localStorage after component is mounted on client
+        const hasVisited = mounted ? localStorage.getItem('hasVisited') : null
         
         if (!hasVisited) {
-          // First visit - increment count
           const response = await fetch('/api/visitors', {
             method: 'POST',
           })
           const data = await response.json()
           setCount(data.count)
-          // Mark as visited
-          localStorage.setItem('hasVisited', 'true')
+          // Only set localStorage after successful API call
+          if (mounted) {
+            localStorage.setItem('hasVisited', 'true')
+          }
         } else {
-          // Not first visit - just get current count
           const response = await fetch('/api/visitors')
           const data = await response.json()
           setCount(data.count)
@@ -34,8 +36,15 @@ export default function VisitorCounter() {
       }
     }
 
-    updateCount()
-  }, [])
+    if (mounted) {
+      updateCount()
+    }
+  }, [mounted])
+
+  // Don't render anything until after client-side hydration
+  if (!mounted) {
+    return null
+  }
 
   if (loading) {
     return (

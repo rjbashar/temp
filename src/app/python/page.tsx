@@ -1,6 +1,6 @@
 'use client'
 
-import React from 'react'
+import React, { Suspense } from 'react'
 import NavMenu from '../components/NavMenu'
 
 export default function PythonTutorial() {
@@ -25,45 +25,47 @@ export default function PythonTutorial() {
   ];
 
   return (
-    <>
-      <NavMenu />
-      <main className="min-h-screen p-8 max-w-4xl mx-auto">
-        <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold mb-2">Higher Colleges of Technology</h1>
-          <h2 className="text-3xl font-semibold mb-4">Faculty of Engineering</h2>
-          <h3 className="text-2xl mb-6">Introduction to Python: A Hands-On Lab Tutorial</h3>
-          <div className="text-gray-600">
-            <p className="mb-2">EGN 1273 | Created by Dr. Bashar Alrjoub</p>
-            <p>February 17, 2024</p>
+    <Suspense fallback={<div>Loading...</div>}>
+      <div className="min-h-screen bg-white">
+        <NavMenu />
+        <main className="p-8 max-w-4xl mx-auto">
+          <div className="text-center mb-12">
+            <h1 className="text-4xl font-bold mb-2">Higher Colleges of Technology</h1>
+            <h2 className="text-3xl font-semibold mb-4">Faculty of Engineering</h2>
+            <h3 className="text-2xl mb-6">Introduction to Python: A Hands-On Lab Tutorial</h3>
+            <div className="text-gray-600">
+              <p className="mb-2">EGN 1273 | Created by Dr. Bashar Alrjoub</p>
+              <p>February 17, 2024</p>
+            </div>
           </div>
-        </div>
-        
-        <div className="mb-8">
-          <p className="text-lg mb-4">
-            Welcome to this comprehensive, hands-on introductory Python lab tutorial. 
-            This guide is designed to help you learn Python programming through practical examples and exercises.
-          </p>
-        </div>
+          
+          <div className="mb-8">
+            <p className="text-lg mb-4">
+              Welcome to this comprehensive, hands-on introductory Python lab tutorial. 
+              This guide is designed to help you learn Python programming through practical examples and exercises.
+            </p>
+          </div>
 
-        <section className="mb-12">
-          <h2 className="text-2xl font-semibold mb-4">Table of Contents</h2>
-          <nav className="space-y-2">
-            {tableOfContents.map((item) => (
-              <div key={item.href}>
-                <a 
-                  href={item.href}
-                  className="text-blue-600 hover:text-blue-800 hover:underline"
-                  onClick={(e) => scrollToSection(e, item.href.substring(1))}
-                >
-                  {item.title}
-                </a>
-              </div>
-            ))}
-          </nav>
-        </section>
+          <section className="mb-12">
+            <h2 className="text-2xl font-semibold mb-4">Table of Contents</h2>
+            <nav className="space-y-2">
+              {tableOfContents.map((item) => (
+                <div key={item.href}>
+                  <a 
+                    href={item.href}
+                    className="text-blue-600 hover:text-blue-800 hover:underline"
+                    onClick={(e) => scrollToSection(e, item.href.substring(1))}
+                  >
+                    {item.title}
+                  </a>
+                </div>
+              ))}
+            </nav>
+          </section>
 
-        {/* Add sections here similar to the C++ tutorial */}
-      </main>
-    </>
+          {/* Add sections here similar to the C++ tutorial */}
+        </main>
+      </div>
+    </Suspense>
   );
 } 

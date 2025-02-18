@@ -63,6 +63,100 @@ export default function PythonTutorial() {
             </nav>
           </section>
 
+          <section id="review" className="mb-16">
+            <h2 className="text-3xl font-bold mb-4">Review</h2>
+            <p className="mb-4">
+              In this Python programming tutorial, you will learn:
+            </p>
+            <ul className="list-disc list-inside mb-4 space-y-2">
+              <li>Basic program structure and syntax</li>
+              <li>How to work with variables and data types</li>
+              <li>Using operators for calculations</li>
+              <li>Making decisions with conditional statements</li>
+              <li>Creating loops for repetitive tasks</li>
+            </ul>
+          </section>
+
+          <section id="setup" className="mb-16">
+            <h2 className="text-3xl font-bold mb-4">Setting Up Your Environment</h2>
+            <div className="space-y-4">
+              <div>
+                <h3 className="text-xl font-semibold mb-3">Required Tools:</h3>
+                <ul className="list-disc list-inside space-y-2">
+                  <li>Python 3.x (latest version recommended)</li>
+                  <li>Visual Studio Code or PyCharm (recommended IDEs)</li>
+                  <li>Python extension for VS Code (if using VS Code)</li>
+                </ul>
+              </div>
+
+              <div>
+                <h3 className="text-xl font-semibold mb-3">Installation Steps:</h3>
+                <ol className="list-decimal list-inside space-y-2">
+                  <li>Download Python from <a href="https://python.org/downloads" className="text-blue-600 hover:underline">python.org</a></li>
+                  <li>Install Python (make sure to check "Add to PATH")</li>
+                  <li>Install VS Code or PyCharm</li>
+                  <li>Install Python extension in VS Code</li>
+                  <li>Verify installation by running Python in terminal</li>
+                </ol>
+              </div>
+            </div>
+          </section>
+
+          <section id="first-program" className="mb-16">
+            <h2 className="text-3xl font-bold mb-4">Your First Python Program</h2>
+            <p className="mb-4">Let&apos;s explore different ways to write basic Python programs:</p>
+            
+            <div className="space-y-6">
+              {/* Example 1: Hello World */}
+              <div className="bg-gray-100 p-4 rounded-lg">
+                <h4 className="font-semibold mb-2">1. Basic Output Program</h4>
+                <pre className="bg-black text-white p-3 rounded">
+                  <code>{`# Your first Python program
+print("Hello, World!")
+`}</code>
+                </pre>
+                <p className="mt-2 text-gray-600">Output:</p>
+                <pre className="bg-gray-700 text-white p-2 rounded mt-1">
+                  <code>Hello, World!</code>
+                </pre>
+              </div>
+
+              {/* Example 2: Multiple Lines */}
+              <div className="bg-gray-100 p-4 rounded-lg">
+                <h4 className="font-semibold mb-2">2. Multiple Line Output</h4>
+                <pre className="bg-black text-white p-3 rounded">
+                  <code>{`# Printing multiple lines
+print("Line 1")
+print("Line 2")
+print("Line 3")
+`}</code>
+                </pre>
+                <p className="mt-2 text-gray-600">Output:</p>
+                <pre className="bg-gray-700 text-white p-2 rounded mt-1">
+                  <code>{`Line 1
+Line 2
+Line 3`}</code>
+                </pre>
+              </div>
+
+              {/* Example 3: User Input */}
+              <div className="bg-gray-100 p-4 rounded-lg">
+                <h4 className="font-semibold mb-2">3. Getting User Input</h4>
+                <pre className="bg-black text-white p-3 rounded">
+                  <code>{`# Getting input from user
+name = input("Enter your name: ")
+print(f"Hello, {name}!")
+`}</code>
+                </pre>
+                <p className="mt-2 text-gray-600">Example Interaction:</p>
+                <pre className="bg-gray-700 text-white p-2 rounded mt-1">
+                  <code>{`Enter your name: John
+Hello, John!`}</code>
+                </pre>
+              </div>
+            </div>
+          </section>
+
           {/* Add sections here similar to the C++ tutorial */}
         </main>
       </div>

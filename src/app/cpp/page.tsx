@@ -149,6 +149,20 @@ Pi: 3.14159 (Size: 8 bytes)`}</code>
                     <li>Converts a character to its ASCII value and back</li>
                   </ol>
                 </div>
+
+                <div className="bg-blue-50 p-4 rounded-lg mt-8">
+                  <h4 className="font-semibold mb-2 text-blue-800">📚 Additional Study Materials</h4>
+                  <ul className="list-disc list-inside space-y-4">
+                    <li>
+                      <a href="/api/pdf?file=Week 1 S1 E1 ECT 124_W01.pdf" target="_blank" className="text-blue-600 hover:text-blue-800 underline">
+                        Week 1 (S1, E1) ECT 124
+                      </a>
+                      <p className="text-sm text-gray-600 ml-5 mt-1">
+                        Introduction to fundamental C++ programming concepts including variable declarations, basic data types, and memory allocation. The module covers the implementation of primitive data structures, understanding of memory management principles, and proper syntax for variable initialization. Additionally, it encompasses the setup and configuration of the development environment, compiler installation, and basic command line operations for program compilation and execution.
+                      </p>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </section>
           </TabsContent>
@@ -279,6 +293,20 @@ int main() {  // int and main are reserved words
                   </pre>
                   <p className="mt-2">List the reserved words and their purpose in the code above.</p>
                 </div>
+
+                <div className="bg-blue-50 p-4 rounded-lg mt-8">
+                  <h4 className="font-semibold mb-2 text-blue-800">📚 Additional Study Materials</h4>
+                  <ul className="list-disc list-inside space-y-4">
+                    <li>
+                      <a href="/api/pdf?file=Week 2 S2 E1 ECT 124_W02.pdf" target="_blank" className="text-blue-600 hover:text-blue-800 underline">
+                        Week 2 (S2, E1) ECT 124
+                      </a>
+                      <p className="text-sm text-gray-600 ml-5 mt-1">
+                        Comprehensive examination of C++ reserved keywords and their implementation in program structure. The material covers the syntactic and semantic properties of fundamental keywords such as int, double, void, and const, along with their memory implications and usage constraints.
+                      </p>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </section>
           </TabsContent>
@@ -401,6 +429,20 @@ int main() {
 }`}</code>
                   </pre>
                   <p className="mt-2">For each line, determine if it is a declaration statement or an executable statement.</p>
+                </div>
+
+                <div className="bg-blue-50 p-4 rounded-lg mt-8">
+                  <h4 className="font-semibold mb-2 text-blue-800">📚 Additional Study Materials</h4>
+                  <ul className="list-disc list-inside space-y-4">
+                    <li>
+                      <a href="/api/pdf?file=Week 3 S3 E2 ECT 124_W03.pdf" target="_blank" className="text-blue-600 hover:text-blue-800 underline">
+                        Week 3 (S3, E2) ECT 124
+                      </a>
+                      <p className="text-sm text-gray-600 ml-5 mt-1">
+                        Detailed examination of input/output operations in C++, including stream manipulation, formatting, and error handling. The module covers console I/O, file I/O, and string stream operations.
+                      </p>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </section>
@@ -544,6 +586,20 @@ int main() {
                     <li>Displays the information in a formatted table</li>
                     <li>Includes appropriate units in the output</li>
                   </ol>
+                </div>
+
+                <div className="bg-blue-50 p-4 rounded-lg mt-8">
+                  <h4 className="font-semibold mb-2 text-blue-800">📚 Additional Study Materials</h4>
+                  <ul className="list-disc list-inside space-y-4">
+                    <li>
+                      <a href="/api/pdf?file=Week 3 S3 E2 ECT 124_W03.pdf" target="_blank" className="text-blue-600 hover:text-blue-800 underline">
+                        Week 3 (S3, E2) ECT 124
+                      </a>
+                      <p className="text-sm text-gray-600 ml-5 mt-1">
+                        Detailed examination of input/output operations in C++, including stream manipulation, formatting, and error handling. The module covers console I/O, file I/O, and string stream operations.
+                      </p>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </section>
@@ -753,6 +809,28 @@ int main() {
                     <li>Displays appropriate messages for each condition</li>
                   </ol>
                 </div>
+
+                <div className="bg-blue-50 p-4 rounded-lg mt-8">
+                  <h4 className="font-semibold mb-2 text-blue-800">📚 Additional Study Materials</h4>
+                  <ul className="list-disc list-inside space-y-4">
+                    <li>
+                      <a href="/api/pdf?file=Week 4 S4 E3 ECT 124_W04.pdf" target="_blank" className="text-blue-600 hover:text-blue-800 underline">
+                        Week 4 (S4, E3) ECT 124
+                      </a>
+                      <p className="text-sm text-gray-600 ml-5 mt-1">
+                        Comprehensive analysis of control flow structures in C++, with emphasis on if statements, if-else constructs, and decision-making structures. The module examines implementation of control structures, optimization techniques, and best practices.
+                      </p>
+                    </li>
+                    <li>
+                      <a href="/api/pdf?file=Week 5 S5 E3 ECT 124_W05.pdf" target="_blank" className="text-blue-600 hover:text-blue-800 underline">
+                        Week 5 (S5, E3) ECT 124
+                      </a>
+                      <p className="text-sm text-gray-600 ml-5 mt-1">
+                        Detailed coverage of control structures using switch statements in C++. The module focuses on implementing multiple-choice decision structures, case handling, and best practices for switch statement usage.
+                      </p>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </section>
           </TabsContent>
@@ -857,7 +935,7 @@ int main() {
     
     do {
         // Get input from user
-        cout << "Enter a number (5-80): ";
+        cout << "Enter a number between 5 and 80: ";
         cin >> number;
         
         // Validate input
@@ -956,6 +1034,28 @@ int main() {
                       </ul>
                     </li>
                   </ol>
+                </div>
+
+                <div className="bg-blue-50 p-4 rounded-lg mt-8">
+                  <h4 className="font-semibold mb-2 text-blue-800">📚 Additional Study Materials</h4>
+                  <ul className="list-disc list-inside space-y-4">
+                    <li>
+                      <a href="/api/pdf?file=Week 6 S6 E4 ECT 124_W06.pdf" target="_blank" className="text-blue-600 hover:text-blue-800 underline">
+                        Week 6 (S6, E4) ECT 124
+                      </a>
+                      <p className="text-sm text-gray-600 ml-5 mt-1">
+                        In-depth examination of iterative structures in C++, focusing on FOR and DO WHILE loops. The module covers loop initialization, condition testing, and iteration mechanisms, including performance considerations and optimization techniques.
+                      </p>
+                    </li>
+                    <li>
+                      <a href="/api/pdf?file=Week 7 S7 E4 ECT 124_W07.pdf" target="_blank" className="text-blue-600 hover:text-blue-800 underline">
+                        Week 7 (S7, E4) ECT 124
+                      </a>
+                      <p className="text-sm text-gray-600 ml-5 mt-1">
+                        Advanced study of loop structures with emphasis on nested loops and complex iteration patterns in C++. The module provides detailed analysis of loop implementation, optimization strategies, and practical applications.
+                      </p>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </section>

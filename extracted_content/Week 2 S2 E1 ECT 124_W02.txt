@@ -1,0 +1,68 @@
+1/31 Lesson:  Week 2 (S2, E1_PC2,PC3 ) ECT 124
+
+2/31 Lesson:  Week 2 (S2, E1_PC2,PC3 ) ECT 124
+
+3/31 Lesson:  Week 2 (S2, E1_PC2,PC3 ) ECT 124
+
+4/31 Lesson:  Week 2 (S2, E1_PC2,PC3 ) ECT 124
+
+Open Ended Question
+5/31 Lesson:  Week 2 (S2, E1_PC2,PC3 ) ECT 124
+
+In your opinion, what is defined  as RESERVED WORDS  in a C++ language?
+Please enter  your answer here.
+6/31 Lesson:  Week 2 (S2, E1_PC2,PC3 ) ECT 124
+
+Quiz
+7/31 Lesson:  Week 2 (S2, E1_PC2,PC3 ) ECT 124
+
+Can "reserved  words"  be used in a variable  declaration?
+YES
+NO
+8/40 Lesson:  Week 2 (S2, E1) ECT 124
+
+9/31 Lesson:  Week 2 (S2, E1_PC2,PC3 ) ECT 124
+
+10/31 Lesson:  Week 2 (S2, E1_PC2,PC3 ) ECT 124
+
+11/31 Lesson:  Week 2 (S2, E1_PC2,PC3 ) ECT 124
+
+12/31 Lesson:  Week 2 (S2, E1_PC2,PC3 ) ECT 124
+
+13/31 Lesson:  Week 2 (S2, E1_PC2,PC3 ) ECT 124
+
+14/31 Lesson:  Week 2 (S2, E1_PC2,PC3 ) ECT 124
+
+15/31 Lesson:  Week 2 (S2, E1_PC2,PC3 ) ECT 124
+
+16/31 Lesson:  Week 2 (S2, E1_PC2,PC3 ) ECT 124
+
+17/31 Lesson:  Week 2 (S2, E1_PC2,PC3 ) ECT 124
+
+18/31 Lesson:  Week 2 (S2, E1_PC2,PC3 ) ECT 124
+
+19/31 Lesson:  Week 2 (S2, E1_PC2,PC3 ) ECT 124
+
+20/31 Lesson:  Week 2 (S2, E1_PC2,PC3 ) ECT 124
+
+21/31 Lesson:  Week 2 (S2, E1_PC2,PC3 ) ECT 124
+
+22/31 Lesson:  Week 2 (S2, E1_PC2,PC3 ) ECT 124
+
+23/31 Lesson:  Week 2 (S2, E1_PC2,PC3 ) ECT 124
+
+24/31 Lesson:  Week 2 (S2, E1_PC2,PC3 ) ECT 124
+
+25/31 Lesson:  Week 2 (S2, E1_PC2,PC3 ) ECT 124
+
+26/31 Lesson:  Week 2 (S2, E1_PC2,PC3 ) ECT 124
+
+27/31 Lesson:  Week 2 (S2, E1_PC2,PC3 ) ECT 124
+
+28/31 Lesson:  Week 2 (S2, E1_PC2,PC3 ) ECT 124
+
+29/31 Lesson:  Week 2 (S2, E1_PC2,PC3 ) ECT 124
+
+30/31 Lesson:  Week 2 (S2, E1_PC2,PC3 ) ECT 124
+
+31/31 Lesson:  Week 2 (S2, E1_PC2,PC3 ) ECT 124

@@ -1,0 +1,51 @@
+1/23Lesson:  Week 6 (S6, E4_PC1) ECT 124
+
+2/23Lesson:  Week 6 (S6, E4_PC1) ECT 124
+
+3/23Lesson:  Week 6 (S6, E4_PC1) ECT 124
+
+4/23Lesson:  Week 6 (S6, E4_PC1) ECT 124
+
+Draw It
+5/23Lesson:  Week 6 (S6, E4_PC1) ECT 124
+
+6/23Lesson:  Week 6 (S6, E4_PC1) ECT 124
+
+7/23Lesson:  Week 6 (S6, E4_PC1) ECT 124
+
+8/23Lesson:  Week 6 (S6, E4_PC1) ECT 124
+
+9/23Lesson:  Week 6 (S6, E4_PC1) ECT 124
+
+10/23Lesson:  Week 6 (S6, E4_PC1) ECT 124
+
+11/23Lesson:  Week 6 (S6, E4_PC1) ECT 124
+
+12/23 Lesson:  Week 6 (S6, E4_PC1) ECT 124
+
+13/23Lesson:  Week 6 (S6, E4_PC1) ECT 124
+
+14/23Lesson:  Week 6 (S6, E4_PC1) ECT 124
+
+15/23 Lesson:  Week 6 (S6, E4_PC1) ECT 124
+
+16/23Lesson:  Week 6 (S6, E4_PC1) ECT 124
+
+17/23 Lesson:  Week 6 (S6, E4_PC1) ECT 124
+
+18/23 Lesson:  Week 6 (S6, E4_PC1) ECT 124
+
+Loops  in C++( DO WHILE  AND FOR -17)
+19/23 Lesson:  Week 6 (S6, E4_PC1) ECT 124
+
+Quiz
+20/23Lesson:  Week 6 (S6, E4_PC1) ECT 124
+
+The for loop statement  is an exit controlled  type of loop.
+TRUE
+FALSE
+21/23Lesson:  Week 6 (S6, E4_PC1) ECT 124
+
+22/23Lesson:  Week 6 (S6, E4_PC1) ECT 124
+
+23/23Lesson:  Week 6 (S6, E4_PC1) ECT 124

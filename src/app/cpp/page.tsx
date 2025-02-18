@@ -8,21 +8,19 @@ export default function CppTutorial() {
   return (
     <>
       <NavMenu />
-      <main className="min-h-screen p-8 max-w-4xl mx-auto">
+      <main className="min-h-screen p-8 pt-24 max-w-4xl mx-auto">
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold mb-2">Higher Colleges of Technology</h1>
-          <h2 className="text-3xl font-semibold mb-4">Faculty of Engineering</h2>
-          <h3 className="text-2xl mb-6">Programming with C++: A Hands-On Lab Tutorial</h3>
+          <h1 className="text-4xl font-bold mb-2">C++ Programming</h1>
+          <h2 className="text-3xl font-semibold mb-4">A Hands-On Lab Tutorial</h2>
           <div className="text-gray-600">
-            <p className="mb-2">ECT 124 | Created by Dr. Bashar Alrjoub</p>
+            <p className="mb-2">Created by Dr. Bashar Alrjoub</p>
             <p>February 17, 2025</p>
           </div>
         </div>
         
         <div className="mb-8">
           <p className="text-lg mb-4">
-            Welcome to this introductory C++ programming tutorial. This guide covers the fundamental concepts
-            required for ECT 124, focusing on basic programming concepts and practical examples.
+            Welcome to this introductory C++ programming tutorial. This guide covers fundamental programming concepts through practical examples and hands-on exercises.
           </p>
         </div>
 
@@ -1390,7 +1388,7 @@ New balance: $1500`}</code>
                         Week 4 (S4, E3) ECT 124
                       </a>
                       <p className="text-sm text-gray-600 ml-5 mt-1">
-                        In-depth examination of control flow structures in C++, with emphasis on if statements, if-else constructs, and decision-making structures. The module examines implementation of control structures, optimization techniques, and best practices.
+                        In-depth examination of iterative structures in C++, focusing on FOR and DO WHILE loops. The module covers loop initialization, condition testing, and iteration mechanisms, including performance considerations and optimization techniques.
                       </p>
                     </li>
                     <li>
@@ -1398,7 +1396,7 @@ New balance: $1500`}</code>
                         Week 5 (S5, E3) ECT 124
                       </a>
                       <p className="text-sm text-gray-600 ml-5 mt-1">
-                        Detailed coverage of control structures using switch statements in C++. The module focuses on implementing multiple-choice decision structures, case handling, and best practices for switch statement usage.
+                        Advanced study of loop structures with emphasis on nested loops and complex iteration patterns in C++. The module provides detailed analysis of loop implementation, optimization strategies, and practical applications.
                       </p>
                     </li>
                   </ul>

@@ -31,9 +31,8 @@ export default function Home() {
     <>
       <main className="min-h-screen p-8 max-w-4xl mx-auto">
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold mb-2">Higher Colleges of Technology</h1>
-          <h2 className="text-3xl font-semibold mb-4">Faculty of Engineering</h2>
-          <h3 className="text-2xl mb-6">Introduction to Python: A Hands-On Lab Tutorial</h3>
+          <h1 className="text-4xl font-bold mb-2">Python Programming</h1>
+          <h2 className="text-3xl font-semibold mb-4">A Hands-On Lab Tutorial</h2>
           <div className="text-gray-600">
             <p className="mb-2">EGN 1273 | Created by Dr. Bashar Alrjoub</p>
             <p>February 17, 2025</p>
@@ -86,7 +85,7 @@ export default function Home() {
             <li>Terminal/Command Prompt access</li>
               </ul>
           
-          <div className="bg-gray-100 p-4 rounded-lg mt-4">
+          <div className="bg-gray-100 p-4s rounded-lg mt-4">
             <h4 className="font-semibold mb-2">Check Your Installation:</h4>
             <pre className="bg-black text-white p-3 rounded">
               <code>python --version</code>

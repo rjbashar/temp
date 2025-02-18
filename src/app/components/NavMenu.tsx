@@ -4,14 +4,24 @@ import Link from 'next/link'
 
 export default function NavMenu() {
   return (
-    <nav className="bg-blue-800 text-white p-4 mb-8">
-      <div className="max-w-6xl mx-auto">
-        <div className="flex justify-between items-center">
-          <div className="text-xl font-bold">HCT Programming Labs</div>
-          <div className="space-x-6">
-            <Link href="/" className="hover:text-blue-200">Home</Link>
-            <Link href="/python" className="hover:text-blue-200">Python</Link>
-            <Link href="/cpp" className="hover:text-blue-200">C++</Link>
+    <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-sm border-b z-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center h-16">
+          <div className="flex-shrink-0">
+            <Link href="/" className="text-2xl font-bold text-gray-900">
+              Tutoriax
+            </Link>
+          </div>
+          <div className="hidden sm:flex sm:space-x-8">
+            <Link href="/learn" className="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md">
+              Learning Paths
+            </Link>
+            <Link href="/resources" className="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md">
+              Resources
+            </Link>
+            <Link href="/community" className="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md">
+              Community
+            </Link>
           </div>
         </div>
       </div>

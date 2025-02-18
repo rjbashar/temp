@@ -8,7 +8,7 @@ async function getCount(): Promise<number> {
   try {
     const data = await fs.readFile(counterFile, 'utf8')
     return JSON.parse(data).count
-  } catch (error) {
+  } catch {
     // If file doesn&apos;t exist, create it with initial count
     await fs.mkdir(path.dirname(counterFile), { recursive: true })
     await fs.writeFile(counterFile, JSON.stringify({ count: 0 }))

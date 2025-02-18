@@ -15,7 +15,7 @@ export default function CppTutorial() {
           <h3 className="text-2xl mb-6">Programming with C++: A Hands-On Lab Tutorial</h3>
           <div className="text-gray-600">
             <p className="mb-2">ECT 124 | Created by Dr. Bashar Alrjoub</p>
-            <p>February 17, 2024</p>
+            <p>February 17, 2025</p>
           </div>
         </div>
         
@@ -567,6 +567,48 @@ int main() {
                 </div>
 
                 <div className="bg-gray-100 p-4 rounded-lg">
+                  <h4 className="font-semibold mb-2">Basic Arithmetic Calculator Example</h4>
+                  <pre className="bg-black text-white p-3 rounded">
+                    <code>{`#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    // Variable declarations
+    string fullName;
+    double num1, num2;
+    
+    // Get user&apos;s full name using getline
+    cout << "Enter your full name: ";
+    getline(cin, fullName);
+    
+    // Display welcome message
+    cout << "Welcome, " << fullName << "!" << endl;
+    
+    // Get two numbers
+    cout << "Enter first number: ";
+    cin >> num1;
+    cout << "Enter second number: ";
+    cin >> num2;
+    
+    // Display calculations
+    cout << "\nCalculation Results:" << endl;
+    cout << "Addition: " << num1 << " + " << num2 << " = " << (num1 + num2) << endl;
+    cout << "Subtraction: " << num1 << " - " << num2 << " = " << (num1 - num2) << endl;
+    cout << "Multiplication: " << num1 << " * " << num2 << " = " << (num1 * num2) << endl;
+    
+    if (num2 != 0) {
+        cout << "Division: " << num1 << " / " << num2 << " = " << (num1 / num2) << endl;
+    } else {
+        cout << "Division by zero is not allowed" << endl;
+    }
+    
+    return 0;
+}`}</code>
+                  </pre>
+                </div>
+
+                <div className="bg-gray-100 p-4 rounded-lg">
                   <h4 className="font-semibold mb-2">Important Input/Output Tips:</h4>
                   <ul className="list-disc list-inside space-y-2">
                     <li>Always provide clear prompts for user input</li>
@@ -960,7 +1002,7 @@ int main() {
                 </div>
 
                 <div className="bg-gray-100 p-4 rounded-lg">
-                  <h4 className="font-semibold mb-2">Finding Numbers Divisible by 5</h4>
+                  <h4 className="font-semibold mb-2">Finding Numbers Divisible by 5 and Their Sum</h4>
                   <pre className="bg-black text-white p-3 rounded">
                     <code>{`#include <iostream>
 using namespace std;
@@ -970,14 +1012,18 @@ int main() {
     
     cout << "Numbers from 1 to 50 divisible by 5:" << endl;
     
+    // Loop through numbers 1 to 50
     for (int i = 1; i <= 50; i++) {
+        // Check if number is divisible by 5
         if (i % 5 == 0) {
             cout << i << " ";
-            sum += i;
+            sum += i;  // Add to sum if divisible by 5
         }
     }
     
-    cout << "\nSum of these numbers: " << sum << endl;
+    // Display the final sum
+    cout << "\nSum of numbers divisible by 5: " << sum << endl;
+    
     return 0;
 }`}</code>
                   </pre>
@@ -985,12 +1031,12 @@ int main() {
                   <pre className="bg-gray-700 text-white p-2 rounded mt-1">
                     <code>{`Numbers from 1 to 50 divisible by 5:
 5 10 15 20 25 30 35 40 45 50
-Sum of these numbers: 275`}</code>
+Sum of numbers divisible by 5: 275`}</code>
                   </pre>
                 </div>
 
                 <div className="bg-gray-100 p-4 rounded-lg">
-                  <h4 className="font-semibold mb-2">Cube Calculator</h4>
+                  <h4 className="font-semibold mb-2">Cube Calculator (While Loop)</h4>
                   <pre className="bg-black text-white p-3 rounded">
                     <code>{`#include <iostream>
 using namespace std;
@@ -998,23 +1044,49 @@ using namespace std;
 int main() {
     int number;
     
-    while (true) {
+    cout << "Enter a number between 5 and 80 (0 to exit): ";
+    cin >> number;
+    
+    while (number != 0) {
+        if (number >= 5 && number <= 80) {
+            cout << "Cube of " << number << " is: " << (number * number * number) << endl;
+        } else {
+            cout << "Please enter a number between 5 and 80" << endl;
+        }
+        
+        cout << "\nEnter another number (0 to exit): ";
+        cin >> number;
+    }
+    
+    cout << "Program ended." << endl;
+    return 0;
+}`}</code>
+                  </pre>
+                </div>
+
+                <div className="bg-gray-100 p-4 rounded-lg">
+                  <h4 className="font-semibold mb-2">Cube Calculator (Do-While Loop)</h4>
+                  <pre className="bg-black text-white p-3 rounded">
+                    <code>{`#include <iostream>
+using namespace std;
+
+int main() {
+    int number;
+    
+    do {
         cout << "Enter a number between 5 and 80 (0 to exit): ";
         cin >> number;
         
-        if (number == 0) {
-            break;
+        if (number != 0) {
+            if (number >= 5 && number <= 80) {
+                cout << "Cube of " << number << " is: " << (number * number * number) << endl;
+            } else {
+                cout << "Please enter a number between 5 and 80" << endl;
+            }
         }
-        
-        if (number >= 5 && number <= 80) {
-            cout << "Cube of " << number << " is: " 
-                 << (number * number * number) << endl;
-        } else {
-            cout << "Number must be between 5 and 80" << endl;
-        }
-    }
+    } while (number != 0);
     
-    cout << "Program ended" << endl;
+    cout << "Program ended." << endl;
     return 0;
 }`}</code>
                   </pre>

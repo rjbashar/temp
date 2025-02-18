@@ -9,4 +9,4 @@ export async function GET() {
 export async function POST() {
   visitorCount++
   return NextResponse.json({ count: visitorCount })
-} 
+}

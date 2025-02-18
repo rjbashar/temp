@@ -49,8 +49,8 @@ export default function CppTutorial() {
                         <li><code>char</code> - Characters</li>
                         <li><code>float</code> - Floating point</li>
                         <li><code>double</code> - Double precision</li>
-                      </ul>
-                    </div>
+              </ul>
+            </div>
                     <div className="border p-3 rounded bg-green-50">
                       <h4 className="font-semibold mb-2">Derived Types</h4>
                       <ul className="list-disc list-inside">
@@ -58,7 +58,7 @@ export default function CppTutorial() {
                         <li><code>pointers</code> - Memory addresses</li>
                         <li><code>functions</code> - Code blocks</li>
                       </ul>
-                    </div>
+            </div>
                     <div className="border p-3 rounded bg-yellow-50">
                       <h4 className="font-semibold mb-2">User-Defined</h4>
                       <ul className="list-disc list-inside">
@@ -67,14 +67,14 @@ export default function CppTutorial() {
                         <li><code>union</code> - Shared memory</li>
                         <li><code>enum</code> - Constants</li>
                       </ul>
-                    </div>
+          </div>
                   </div>
                 </div>
 
-                <div className="bg-gray-100 p-4 rounded-lg">
+            <div className="bg-gray-100 p-4 rounded-lg">
                   <h4 className="font-semibold mb-2">Working with ASCII Values</h4>
-                  <pre className="bg-black text-white p-3 rounded">
-                    <code>{`#include <iostream>
+              <pre className="bg-black text-white p-3 rounded">
+                <code>{`#include <iostream>
 using namespace std;
 
 int main() {
@@ -90,20 +90,20 @@ int main() {
     
     return 0;
 }`}</code>
-                  </pre>
-                  <p className="mt-2 text-gray-600">Output:</p>
-                  <pre className="bg-gray-700 text-white p-2 rounded mt-1">
+              </pre>
+              <p className="mt-2 text-gray-600">Output:</p>
+              <pre className="bg-gray-700 text-white p-2 rounded mt-1">
                     <code>{`letter1 (char): d
 letter1 (ASCII): 100
 letter2 (char): d
 letter2 (ASCII): 100`}</code>
-                  </pre>
-                </div>
+              </pre>
+            </div>
 
-                <div className="bg-gray-100 p-4 rounded-lg">
+            <div className="bg-gray-100 p-4 rounded-lg">
                   <h4 className="font-semibold mb-2">Simple Data Type Examples</h4>
-                  <pre className="bg-black text-white p-3 rounded">
-                    <code>{`#include <iostream>
+              <pre className="bg-black text-white p-3 rounded">
+                <code>{`#include <iostream>
 using namespace std;
 
 int main() {
@@ -127,20 +127,20 @@ int main() {
     
     return 0;
 }`}</code>
-                  </pre>
-                  <p className="mt-2 text-gray-600">Output:</p>
-                  <pre className="bg-gray-700 text-white p-2 rounded mt-1">
+              </pre>
+              <p className="mt-2 text-gray-600">Output:</p>
+              <pre className="bg-gray-700 text-white p-2 rounded mt-1">
                     <code>{`Age: 20 (Size: 4 bytes)
 Height: 1.75 (Size: 4 bytes)
 Grade: A (Size: 1 byte)
 Pi: 3.14159 (Size: 8 bytes)`}</code>
-                  </pre>
-                </div>
+              </pre>
+            </div>
 
-                <div className="bg-gray-100 p-4 rounded-lg">
+            <div className="bg-gray-100 p-4 rounded-lg">
                   <h4 className="font-semibold mb-2">Temperature Converter Example</h4>
-                  <pre className="bg-black text-white p-3 rounded">
-                    <code>{`#include <iostream>
+              <pre className="bg-black text-white p-3 rounded">
+                <code>{`#include <iostream>
 using namespace std;
 
 int main() {
@@ -161,18 +161,18 @@ int main() {
     
     return 0;
 }`}</code>
-                  </pre>
+              </pre>
                   <p className="mt-2 text-gray-600">Example Output:</p>
-                  <pre className="bg-gray-700 text-white p-2 rounded mt-1">
+              <pre className="bg-gray-700 text-white p-2 rounded mt-1">
                     <code>{`Enter temperature in Celsius: 25
 25 degrees Celsius = 77 degrees Fahrenheit`}</code>
-                  </pre>
-                </div>
+              </pre>
+            </div>
 
-                <div className="bg-gray-100 p-4 rounded-lg">
+            <div className="bg-gray-100 p-4 rounded-lg">
                   <h4 className="font-semibold mb-2">Student Information Example</h4>
-                  <pre className="bg-black text-white p-3 rounded">
-                    <code>{`#include <iostream>
+              <pre className="bg-black text-white p-3 rounded">
+                <code>{`#include <iostream>
 using namespace std;
 
 int main() {
@@ -191,8 +191,8 @@ int main() {
     
     return 0;
 }`}</code>
-                  </pre>
-                </div>
+              </pre>
+            </div>
 
                 <div className="bg-yellow-50 p-4 rounded-lg">
                   <h4 className="font-semibold mb-2 text-yellow-800">Additional Practice Exercises</h4>
@@ -250,7 +250,7 @@ int main() {
               
               <div className="space-y-6">
                 {/* Matching Exercise */}
-                <div className="bg-gray-100 p-4 rounded-lg">
+            <div className="bg-gray-100 p-4 rounded-lg">
                   <h3 className="text-xl font-semibold mb-3">Match Reserved Words with Their Functions:</h3>
                   <div className="grid grid-cols-2 gap-4">
                     <div className="space-y-2">
@@ -308,7 +308,7 @@ int main() {
                 {/* Example with Multiple Reserved Words */}
                 <div className="bg-gray-100 p-4 rounded-lg">
                   <h4 className="font-semibold mb-2">Identifying Reserved Words in Code</h4>
-                  <pre className="bg-black text-white p-3 rounded">
+              <pre className="bg-black text-white p-3 rounded">
                     <code>{`// Example program using multiple reserved words
 #include <iostream>
 using namespace std;
@@ -322,7 +322,7 @@ void displayMessage() {
 int calculateSum(int a, int b) {
     // if and return are reserved words
     if (a < 0 || b < 0) {
-        return 0;
+    return 0;
     }
     return a + b;
 }
@@ -338,8 +338,8 @@ int main() {  // int and main are reserved words
     
     return 0;  // return is a reserved word
 }`}</code>
-                  </pre>
-                </div>
+              </pre>
+            </div>
 
                 <div className="bg-gray-100 p-4 rounded-lg">
                   <h4 className="font-semibold mb-2">Important Notes:</h4>
@@ -349,7 +349,7 @@ int main() {  // int and main are reserved words
                     <li>Have special meaning in the language</li>
                     <li>Cannot be redefined</li>
                   </ul>
-                </div>
+          </div>
 
                 <div className="bg-yellow-50 p-4 rounded-lg">
                   <h4 className="font-semibold mb-2 text-yellow-800">Practice Exercise</h4>
@@ -369,10 +369,10 @@ int main() {  // int and main are reserved words
                   <p className="mt-2">List the reserved words and their purpose in the code above.</p>
                 </div>
 
-                <div className="bg-gray-100 p-4 rounded-lg">
+            <div className="bg-gray-100 p-4 rounded-lg">
                   <h4 className="font-semibold mb-2">Using const and static Keywords</h4>
-                  <pre className="bg-black text-white p-3 rounded">
-                    <code>{`#include <iostream>
+              <pre className="bg-black text-white p-3 rounded">
+                <code>{`#include <iostream>
 using namespace std;
 
 // Function using static variable
@@ -400,9 +400,9 @@ int main() {
     
     return 0;
 }`}</code>
-                  </pre>
-                  <p className="mt-2 text-gray-600">Output:</p>
-                  <pre className="bg-gray-700 text-white p-2 rounded mt-1">
+              </pre>
+              <p className="mt-2 text-gray-600">Output:</p>
+              <pre className="bg-gray-700 text-white p-2 rounded mt-1">
                     <code>{`Price: $100
 Tax rate: 5%
 Tax amount: $5
@@ -411,13 +411,13 @@ Calling function multiple times:
 This function has been called 1 times
 This function has been called 2 times
 This function has been called 3 times`}</code>
-                  </pre>
-                </div>
+              </pre>
+            </div>
 
-                <div className="bg-gray-100 p-4 rounded-lg">
+            <div className="bg-gray-100 p-4 rounded-lg">
                   <h4 className="font-semibold mb-2">Using sizeof and typedef Keywords</h4>
-                  <pre className="bg-black text-white p-3 rounded">
-                    <code>{`#include <iostream>
+              <pre className="bg-black text-white p-3 rounded">
+                <code>{`#include <iostream>
 using namespace std;
 
 // Create a new type name using typedef
@@ -443,7 +443,7 @@ int main() {
     
     return 0;
 }`}</code>
-                  </pre>
+              </pre>
                 </div>
 
                 <div className="bg-yellow-50 p-4 rounded-lg">
@@ -507,10 +507,10 @@ const int MAX_STUDENTS = 30;  // Maximum class size
 // Array declarations
 int scores[5];        // Array to store test scores
 double weights[3];    // Assignment weights`}</code>
-                  </pre>
-                </div>
+              </pre>
+            </div>
 
-                <div className="bg-gray-100 p-4 rounded-lg">
+            <div className="bg-gray-100 p-4 rounded-lg">
                   <h3 className="text-xl font-semibold mb-3">Executable Statements</h3>
                   <p className="mb-4">Perform actions like calculations, assignments, and input/output operations. Include comments to explain complex operations.</p>
                   <pre className="bg-black text-white p-3 rounded">
@@ -534,8 +534,8 @@ cout << "Average: " << average << endl;  // Display result`}</code>
                 <div className="bg-gray-100 p-4 rounded-lg">
                   <h4 className="font-semibold mb-2">Student Grade Calculator Example</h4>
                   <p className="mb-2">This example shows both declaration and executable statements working together:</p>
-                  <pre className="bg-black text-white p-3 rounded">
-                    <code>{`#include <iostream>
+              <pre className="bg-black text-white p-3 rounded">
+                <code>{`#include <iostream>
 #include <string>
 using namespace std;
 
@@ -578,13 +578,13 @@ int main() {
     
     return 0;
 }`}</code>
-                  </pre>
-                </div>
+              </pre>
+            </div>
 
-                <div className="bg-gray-100 p-4 rounded-lg">
+            <div className="bg-gray-100 p-4 rounded-lg">
                   <h4 className="font-semibold mb-2">Rectangle Area Calculator</h4>
-                  <pre className="bg-black text-white p-3 rounded">
-                    <code>{`#include <iostream>
+              <pre className="bg-black text-white p-3 rounded">
+                <code>{`#include <iostream>
 using namespace std;
 
 int main() {
@@ -612,9 +612,9 @@ int main() {
     
     return 0;
 }`}</code>
-                  </pre>
+              </pre>
                   <p className="mt-2 text-gray-600">Example Output:</p>
-                  <pre className="bg-gray-700 text-white p-2 rounded mt-1">
+              <pre className="bg-gray-700 text-white p-2 rounded mt-1">
                     <code>{`Enter length in meters: 5
 Enter width in meters: 3
 
@@ -622,13 +622,13 @@ Rectangle Dimensions:
 Length: 5 meters
 Width: 3 meters
 Area: 15 square meters`}</code>
-                  </pre>
-                </div>
+              </pre>
+            </div>
 
-                <div className="bg-gray-100 p-4 rounded-lg">
+            <div className="bg-gray-100 p-4 rounded-lg">
                   <h4 className="font-semibold mb-2">Time Converter</h4>
-                  <pre className="bg-black text-white p-3 rounded">
-                    <code>{`#include <iostream>
+              <pre className="bg-black text-white p-3 rounded">
+                <code>{`#include <iostream>
 using namespace std;
 
 int main() {
@@ -652,13 +652,13 @@ int main() {
     
     return 0;
 }`}</code>
-                  </pre>
+              </pre>
                   <p className="mt-2 text-gray-600">Example Output:</p>
-                  <pre className="bg-gray-700 text-white p-2 rounded mt-1">
+              <pre className="bg-gray-700 text-white p-2 rounded mt-1">
                     <code>{`Enter total minutes: 145
 145 minutes = 2 hours and 25 minutes`}</code>
-                  </pre>
-                </div>
+              </pre>
+            </div>
 
                 <div className="bg-yellow-50 p-4 rounded-lg">
                   <h4 className="font-semibold mb-2 text-yellow-800">Additional Practice Exercises</h4>
@@ -678,7 +678,7 @@ int main() {
                       </ul>
                     </li>
                   </ol>
-                </div>
+          </div>
 
                 <div className="bg-blue-50 p-4 rounded-lg mt-8">
                   <h4 className="font-semibold mb-2 text-blue-800">📚 Additional Study Materials</h4>
@@ -712,7 +712,7 @@ int main() {
                     <li><code>endl</code> - Ends the current line and flushes the stream</li>
                     <li><code>&lt;&lt;</code> - Output stream operator (insertion)</li>
                     <li><code>&gt;&gt;</code> - Input stream operator (extraction)</li>
-                  </ul>
+              </ul>
                 </div>
 
                 <div className="bg-gray-100 p-4 rounded-lg">
@@ -735,10 +735,10 @@ int main() {
     // Formatting output
     cout << "-------------------------" << endl;
     cout << "ID: " << studentId << "\tName: " << name << endl;
-    
+
     return 0;
 }`}</code>
-                  </pre>
+              </pre>
                 </div>
 
                 <div className="bg-gray-100 p-4 rounded-lg">
@@ -765,8 +765,8 @@ int main() {
     
     return 0;
 }`}</code>
-                  </pre>
-                </div>
+              </pre>
+            </div>
 
                 <div className="bg-gray-100 p-4 rounded-lg">
                   <h4 className="font-semibold mb-2">Student Information System</h4>
@@ -865,7 +865,7 @@ int main() {
                     <li>Format output to make it readable</li>
                     <li>Include units in prompts and output where applicable</li>
                     <li>Validate input when necessary</li>
-                  </ul>
+              </ul>
                 </div>
 
                 <div className="bg-yellow-50 p-4 rounded-lg">
@@ -920,10 +920,10 @@ int main() {
     
     // Display final total
     cout << "\nTotal cost: $" << total << endl;
-    
+
     return 0;
 }`}</code>
-                  </pre>
+              </pre>
                   <p className="mt-2 text-gray-600">Example Output:</p>
                   <pre className="bg-gray-700 text-white p-2 rounded mt-1">
                     <code>{`=== Shopping List Program ===
@@ -947,8 +947,8 @@ Enter quantity: 2
 Added: 2x Eraser @ $1.00 each
 
 Total cost: $13.25`}</code>
-                  </pre>
-                </div>
+              </pre>
+            </div>
 
                 <div className="bg-gray-100 p-4 rounded-lg">
                   <h4 className="font-semibold mb-2">Contact Information Form</h4>
@@ -984,10 +984,10 @@ int main() {
     cout << setw(15) << "Name: " << fullName << endl;
     cout << setw(15) << "Email: " << email << endl;
     cout << setw(15) << "Phone: " << phone << endl;
-    
+
     return 0;
 }`}</code>
-                  </pre>
+              </pre>
                   <p className="mt-2 text-gray-600">Example Output:</p>
                   <pre className="bg-gray-700 text-white p-2 rounded mt-1">
                     <code>{`=== Contact Information Form ===
@@ -1000,8 +1000,8 @@ Enter phone number: 123-456-7890
           Name: John Smith
          Email: john.smith@email.com
          Phone: 123-456-7890`}</code>
-                  </pre>
-                </div>
+              </pre>
+            </div>
 
                 <div className="bg-yellow-50 p-4 rounded-lg">
                   <h4 className="font-semibold mb-2 text-yellow-800">Additional Practice Exercises</h4>
@@ -1013,7 +1013,7 @@ Enter phone number: 123-456-7890
                         <li>Calculates and displays average</li>
                         <li>Uses proper formatting for output</li>
                       </ul>
-                    </li>
+                </li>
                     <li>Write a Bank Account program that:
                       <ul className="list-disc list-inside ml-8">
                         <li>Takes account holder name</li>
@@ -1021,7 +1021,7 @@ Enter phone number: 123-456-7890
                         <li>Processes deposit and withdrawal</li>
                         <li>Shows final balance with proper formatting</li>
                       </ul>
-                    </li>
+                </li>
                   </ol>
                 </div>
 
@@ -1035,11 +1035,11 @@ Enter phone number: 123-456-7890
                       <p className="text-sm text-gray-600 ml-5 mt-1">
                         Detailed examination of input/output operations in C++, including stream manipulation, formatting, and error handling. The module covers console I/O, file I/O, and string stream operations.
                       </p>
-                    </li>
+                </li>
                   </ul>
-                </div>
-              </div>
-            </section>
+            </div>
+          </div>
+        </section>
           </TabsContent>
 
           {/* Control Flow Tab */}
@@ -1047,13 +1047,13 @@ Enter phone number: 123-456-7890
             <section className="mb-16">
               <h2 className="text-3xl font-bold mb-4">Control Flow in C++</h2>
               <p className="mb-4">Learn how to control program flow using conditional statements:</p>
-              
-              <div className="space-y-6">
-                <div className="bg-gray-100 p-4 rounded-lg">
+          
+          <div className="space-y-6">
+            <div className="bg-gray-100 p-4 rounded-lg">
                   <h3 className="text-xl font-semibold mb-3">If Statements</h3>
                   <p className="mb-2">Used for making decisions in your program:</p>
-                  <pre className="bg-black text-white p-3 rounded">
-                    <code>{`#include <iostream>
+              <pre className="bg-black text-white p-3 rounded">
+                <code>{`#include <iostream>
 using namespace std;
 
 int main() {
@@ -1086,14 +1086,14 @@ int main() {
     
     return 0;
 }`}</code>
-                  </pre>
-                </div>
+              </pre>
+            </div>
 
-                <div className="bg-gray-100 p-4 rounded-lg">
+            <div className="bg-gray-100 p-4 rounded-lg">
                   <h3 className="text-xl font-semibold mb-3">Switch Statement</h3>
                   <p className="mb-2">Used for multiple choice decisions:</p>
-                  <pre className="bg-black text-white p-3 rounded">
-                    <code>{`#include <iostream>
+              <pre className="bg-black text-white p-3 rounded">
+                <code>{`#include <iostream>
 using namespace std;
 
 int main() {
@@ -1139,7 +1139,7 @@ int main() {
             if (num2 != 0) {  // Check for division by zero
                 result = num1 / num2;
                 cout << num1 << " / " << num2 << " = " << result << endl;
-            } else {
+    } else {
                 cout << "Error: Cannot divide by zero" << endl;
             }
             break;
@@ -1150,13 +1150,13 @@ int main() {
     
     return 0;
 }`}</code>
-                  </pre>
-                </div>
+              </pre>
+            </div>
 
-                <div className="bg-gray-100 p-4 rounded-lg">
+            <div className="bg-gray-100 p-4 rounded-lg">
                   <h4 className="font-semibold mb-2">Grade Calculator Example</h4>
-                  <pre className="bg-black text-white p-3 rounded">
-                    <code>{`#include <iostream>
+              <pre className="bg-black text-white p-3 rounded">
+                <code>{`#include <iostream>
 using namespace std;
 
 int main() {
@@ -1165,16 +1165,16 @@ int main() {
     cin >> score;
     
     if (score >= 0 && score <= 100) {
-        if (score >= 90) {
-            cout << "Grade: A" << endl;
-        } else if (score >= 80) {
-            cout << "Grade: B" << endl;
-        } else if (score >= 70) {
-            cout << "Grade: C" << endl;
-        } else if (score >= 60) {
-            cout << "Grade: D" << endl;
-        } else {
-            cout << "Grade: F" << endl;
+    if (score >= 90) {
+        cout << "Grade: A" << endl;
+    } else if (score >= 80) {
+        cout << "Grade: B" << endl;
+    } else if (score >= 70) {
+        cout << "Grade: C" << endl;
+    } else if (score >= 60) {
+        cout << "Grade: D" << endl;
+    } else {
+        cout << "Grade: F" << endl;
         }
     } else {
         cout << "Invalid score" << endl;
@@ -1182,7 +1182,7 @@ int main() {
     
     return 0;
 }`}</code>
-                  </pre>
+              </pre>
                 </div>
 
                 <div className="bg-gray-100 p-4 rounded-lg">
@@ -1229,13 +1229,13 @@ int main() {
     
     return 0;
 }`}</code>
-                  </pre>
-                </div>
+              </pre>
+            </div>
 
-                <div className="bg-gray-100 p-4 rounded-lg">
+            <div className="bg-gray-100 p-4 rounded-lg">
                   <h4 className="font-semibold mb-2">Number Properties Checker</h4>
-                  <pre className="bg-black text-white p-3 rounded">
-                    <code>{`#include <iostream>
+              <pre className="bg-black text-white p-3 rounded">
+                <code>{`#include <iostream>
 using namespace std;
 
 int main() {
@@ -1251,9 +1251,9 @@ int main() {
         cout << "- Number is positive" << endl;
     } else if (number < 0) {
         cout << "- Number is negative" << endl;
-    } else {
+        } else {
         cout << "- Number is zero" << endl;
-    }
+        }
     
     // Check if even or odd
     if (number % 2 == 0) {
@@ -1273,22 +1273,22 @@ int main() {
     
     return 0;
 }`}</code>
-                  </pre>
+              </pre>
                   <p className="mt-2 text-gray-600">Example Output:</p>
-                  <pre className="bg-gray-700 text-white p-2 rounded mt-1">
+              <pre className="bg-gray-700 text-white p-2 rounded mt-1">
                     <code>{`Enter a number: 15
 
 Number Properties:
 - Number is positive
 - Number is odd
 - Number is divisible by both 3 and 5`}</code>
-                  </pre>
-                </div>
+              </pre>
+            </div>
 
-                <div className="bg-gray-100 p-4 rounded-lg">
+            <div className="bg-gray-100 p-4 rounded-lg">
                   <h4 className="font-semibold mb-2">Simple ATM Menu</h4>
-                  <pre className="bg-black text-white p-3 rounded">
-                    <code>{`#include <iostream>
+              <pre className="bg-black text-white p-3 rounded">
+                <code>{`#include <iostream>
 using namespace std;
 
 int main() {
@@ -1343,9 +1343,9 @@ int main() {
     
     return 0;
 }`}</code>
-                  </pre>
-                  <p className="mt-2 text-gray-600">Example Output:</p>
-                  <pre className="bg-gray-700 text-white p-2 rounded mt-1">
+              </pre>
+              <p className="mt-2 text-gray-600">Example Output:</p>
+              <pre className="bg-gray-700 text-white p-2 rounded mt-1">
                     <code>{`=== Simple ATM Menu ===
 1. Check Balance
 2. Deposit
@@ -1355,8 +1355,8 @@ Enter choice (1-4): 2
 Enter amount to deposit: $500
 Deposit successful
 New balance: $1500`}</code>
-                  </pre>
-                </div>
+              </pre>
+            </div>
 
                 <div className="bg-yellow-50 p-4 rounded-lg">
                   <h4 className="font-semibold mb-2 text-yellow-800">Additional Practice Exercises</h4>
@@ -1401,8 +1401,8 @@ New balance: $1500`}</code>
                     </li>
                   </ul>
                 </div>
-              </div>
-            </section>
+          </div>
+        </section>
           </TabsContent>
 
           {/* Loops Tab */}
@@ -1410,13 +1410,13 @@ New balance: $1500`}</code>
             <section className="mb-16">
               <h2 className="text-3xl font-bold mb-4">Loops in C++</h2>
               <p className="mb-4">Learn how to use loops for repetitive tasks and calculations:</p>
-              
-              <div className="space-y-6">
-                <div className="bg-gray-100 p-4 rounded-lg">
+          
+          <div className="space-y-6">
+            <div className="bg-gray-100 p-4 rounded-lg">
                   <h3 className="text-xl font-semibold mb-3">For Loop</h3>
                   <p className="mb-2">Used when you know the exact number of iterations:</p>
-                  <pre className="bg-black text-white p-3 rounded">
-                    <code>{`#include <iostream>
+              <pre className="bg-black text-white p-3 rounded">
+                <code>{`#include <iostream>
 using namespace std;
 
 int main() {
@@ -1435,23 +1435,23 @@ int main() {
     
     return 0;
 }`}</code>
-                  </pre>
-                  <p className="mt-2 text-gray-600">Output:</p>
-                  <pre className="bg-gray-700 text-white p-2 rounded mt-1">
+              </pre>
+              <p className="mt-2 text-gray-600">Output:</p>
+              <pre className="bg-gray-700 text-white p-2 rounded mt-1">
                     <code>{`Number: 1, Sum so far: 1
 Number: 2, Sum so far: 3
 Number: 3, Sum so far: 6
 Number: 4, Sum so far: 10
 Number: 5, Sum so far: 15
 Final sum: 15`}</code>
-                  </pre>
-                </div>
+              </pre>
+            </div>
 
-                <div className="bg-gray-100 p-4 rounded-lg">
+            <div className="bg-gray-100 p-4 rounded-lg">
                   <h3 className="text-xl font-semibold mb-3">While Loop</h3>
                   <p className="mb-2">Used when the number of iterations depends on a condition:</p>
-                  <pre className="bg-black text-white p-3 rounded">
-                    <code>{`#include <iostream>
+              <pre className="bg-black text-white p-3 rounded">
+                <code>{`#include <iostream>
 using namespace std;
 
 int main() {
@@ -1483,19 +1483,19 @@ int main() {
     
     return 0;
 }`}</code>
-                  </pre>
+              </pre>
                   <p className="mt-2 text-gray-600">Example Output (for input 5):</p>
-                  <pre className="bg-gray-700 text-white p-2 rounded mt-1">
+              <pre className="bg-gray-700 text-white p-2 rounded mt-1">
                     <code>{`Enter a positive number: 5
 5 x 4 x 3 x 2 x 1 = 120`}</code>
-                  </pre>
-                </div>
+              </pre>
+            </div>
 
-                <div className="bg-gray-100 p-4 rounded-lg">
+            <div className="bg-gray-100 p-4 rounded-lg">
                   <h3 className="text-xl font-semibold mb-3">Do-While Loop</h3>
                   <p className="mb-2">Used when you want to execute the loop body at least once:</p>
-                  <pre className="bg-black text-white p-3 rounded">
-                    <code>{`#include <iostream>
+              <pre className="bg-black text-white p-3 rounded">
+                <code>{`#include <iostream>
 #include <cmath>  // For pow() function
 using namespace std;
 
@@ -1526,13 +1526,13 @@ int main() {
     cout << "Program ended" << endl;
     return 0;
 }`}</code>
-                  </pre>
-                </div>
+              </pre>
+            </div>
 
-                <div className="bg-gray-100 p-4 rounded-lg">
+            <div className="bg-gray-100 p-4 rounded-lg">
                   <h4 className="font-semibold mb-2">Finding Numbers Divisible by 5 and Their Sum</h4>
-                  <pre className="bg-black text-white p-3 rounded">
-                    <code>{`#include <iostream>
+              <pre className="bg-black text-white p-3 rounded">
+                <code>{`#include <iostream>
 using namespace std;
 
 int main() {
@@ -1554,19 +1554,19 @@ int main() {
     
     return 0;
 }`}</code>
-                  </pre>
-                  <p className="mt-2 text-gray-600">Output:</p>
-                  <pre className="bg-gray-700 text-white p-2 rounded mt-1">
+              </pre>
+              <p className="mt-2 text-gray-600">Output:</p>
+              <pre className="bg-gray-700 text-white p-2 rounded mt-1">
                     <code>{`Numbers from 1 to 50 divisible by 5:
 5 10 15 20 25 30 35 40 45 50
 Sum of numbers divisible by 5: 275`}</code>
-                  </pre>
-                </div>
+              </pre>
+            </div>
 
-                <div className="bg-gray-100 p-4 rounded-lg">
+            <div className="bg-gray-100 p-4 rounded-lg">
                   <h4 className="font-semibold mb-2">Cube Calculator (While Loop)</h4>
-                  <pre className="bg-black text-white p-3 rounded">
-                    <code>{`#include <iostream>
+              <pre className="bg-black text-white p-3 rounded">
+                <code>{`#include <iostream>
 using namespace std;
 
 int main() {
@@ -1617,7 +1617,7 @@ int main() {
     cout << "Program ended." << endl;
     return 0;
 }`}</code>
-                  </pre>
+              </pre>
                 </div>
 
                 <div className="bg-gray-100 p-4 rounded-lg">
@@ -1646,7 +1646,7 @@ int main() {
 }`}</code>
                   </pre>
                   <p className="mt-2 text-gray-600">Example Output:</p>
-                  <pre className="bg-gray-700 text-white p-2 rounded mt-1">
+              <pre className="bg-gray-700 text-white p-2 rounded mt-1">
                     <code>{`Enter a number for multiplication table: 7
 
 Multiplication Table for 7:
@@ -1661,13 +1661,13 @@ Multiplication Table for 7:
  7 x  8 = 56
  7 x  9 = 63
  7 x 10 = 70`}</code>
-                  </pre>
-                </div>
+              </pre>
+            </div>
 
-                <div className="bg-gray-100 p-4 rounded-lg">
+          <div className="bg-gray-100 p-4 rounded-lg">
                   <h4 className="font-semibold mb-2">Number Pattern Generator</h4>
-                  <pre className="bg-black text-white p-3 rounded">
-                    <code>{`#include <iostream>
+            <pre className="bg-black text-white p-3 rounded">
+              <code>{`#include <iostream>
 using namespace std;
 
 int main() {
@@ -1701,9 +1701,9 @@ int main() {
     
     return 0;
 }`}</code>
-                  </pre>
+            </pre>
                   <p className="mt-2 text-gray-600">Example Output:</p>
-                  <pre className="bg-gray-700 text-white p-2 rounded mt-1">
+            <pre className="bg-gray-700 text-white p-2 rounded mt-1">
                     <code>{`Enter number of rows (1-5): 4
 
 Pattern:
@@ -1714,8 +1714,8 @@ Pattern:
 1 2 3 
 1 2 
 1`}</code>
-                  </pre>
-                </div>
+            </pre>
+          </div>
 
                 <div className="bg-yellow-50 p-4 rounded-lg">
                   <h4 className="font-semibold mb-2 text-yellow-800">Additional Practice Exercises</h4>
@@ -1725,17 +1725,17 @@ Pattern:
                         <li>Takes a number as input</li>
                         <li>Uses a loop to check if it&apos;s prime</li>
                         <li>Shows all factors if not prime</li>
-                      </ul>
+              </ul>
                     </li>
                     <li>Write a Number Series Generator that:
                       <ul className="list-disc list-inside ml-8">
                         <li>Generates Fibonacci series</li>
                         <li>Shows first N terms</li>
                         <li>Calculates sum of the series</li>
-                      </ul>
+              </ul>
                     </li>
                   </ol>
-                </div>
+            </div>
 
                 <div className="bg-blue-50 p-4 rounded-lg mt-8">
                   <h4 className="font-semibold mb-2 text-blue-800">📚 Additional Study Materials</h4>
@@ -1756,13 +1756,13 @@ Pattern:
                         Advanced study of loop structures with emphasis on nested loops and complex iteration patterns in C++. The module provides detailed analysis of loop implementation, optimization strategies, and practical applications.
                       </p>
                     </li>
-                  </ul>
-                </div>
-              </div>
-            </section>
+              </ul>
+            </div>
+          </div>
+        </section>
           </TabsContent>
         </Tabs>
       </main>
     </>
   );
-}
+} 
